@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+}
+  a {
+    color:orange;
+    text-decoration: none;
+  }
+  h1{
+    font-size: 70px;
+    text-align: center;
+    border-bottom:5px double gray;
+    margin: 0;
+    padding: 20px;
+  }
+  ol{
+    border-right: 2px dashed gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns:  200px 1fr;
+  }
+  #grid ol{
+    padding-left: 40px;
+  }
+  #grid #article{
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
+  @media(max-width: 750px) {
+    #grid{
+      display: block;
+    }
+    ol{
+      border-right: none;
+    }
+    h1{
+      font-size: 50px;
+      border-bottom:none;
+    }
+    #grid #article{
+      padding-left: 20px;
+      padding-top: 0px;
+    }
+  }
